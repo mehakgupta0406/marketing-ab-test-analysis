@@ -128,3 +128,11 @@ pip install -r requirements.txt
 - Ad exposure, day, and hour describe observed activity. Associations with conversion should not be treated as causal targeting recommendations.
 - Campaign costs and conversion values are not analyzed, so conversion lift alone does not establish profitability.
 - Statistical significance, practical value, and generalizability must be considered separately when writing the final recommendation.
+  
+  ## Skills demonstrated
+
+- Python and pandas for data inspection and validation.
+- SQLite for aggregation and conversion-rate calculations.
+- Hypothesis testing and confidence intervals.
+- Matplotlib for visualizing results.
+- Business interpretation and communication of limitations.
