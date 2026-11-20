@@ -75,6 +75,12 @@ The source CSV is not included in this repository. Download it from Kaggle to re
 4. Loaded the data into an in-memory SQLite database.
 5. Used SQL to aggregate users, conversions, and conversion rates by group.
 6. Calculated absolute and relative conversion lift in Python.
+7. Compared conversion rates using a two-sided two-proportion z-test.
+8. Calculated a 95% confidence interval for the conversion-rate difference.
+9. Visualized conversion rates and group sizes.
+10. Documented the business conclusion and analysis limitations.
+11. Verified that the notebook runs from beginning to end.
+12. Recorded library versions in requirements.txt.
 
 **Tools used:** Python, pandas, SQLite through Python's `sqlite3` module, and Google Colab.
 
