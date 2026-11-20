@@ -4,10 +4,7 @@
 
 Analyzing whether users shown a marketing advertisement converted at a higher rate than users shown a public service announcement (PSA), using Python and SQLite.
 
-**Status:** In progress. Data inspection, SQL aggregation,
-conversion lift, hypothesis testing, confidence intervals,
-and a conversion-rate chart are complete. The final business
-recommendation and reproducibility checks are next.
+**Status:** Core analysis complete.
 
 ## Business question
 
@@ -15,7 +12,7 @@ Does the advertising group have a higher conversion rate than the PSA comparison
 
 The primary metric is **user conversion rate**: the number of users who converted divided by the total number of users in each group. The dataset records conversion as a Boolean; this project does not assume a specific purchase action or revenue value.
 
-## Preliminary results
+##Results
 
 The saved notebook outputs report the following:
 
@@ -108,18 +105,6 @@ To install them locally, run:
 ```bash
 pip install -r requirements.txt
 ```
-
-## Next steps
-
-- [ ] Add a written experiment setup, hypotheses, and a predefined significance level.
-- [ ] Add explicit validation checks for missing values, allowed labels, unique users, and valid field ranges.
-- [ ] Assess the unequal group sizes against the intended allocation, if that information is available.
-- [ ] Run a two-proportion test and calculate a 95% confidence interval for the conversion-rate difference.
-- [ ] Create charts showing group sizes and conversion rates with uncertainty.
-- [ ] Explore day, hour, and exposure patterns, labeling these analyses as exploratory.
-- [ ] Explain practical impact, limitations, and the evidence needed for a campaign decision.
-- [ ] Add dependency versions and verify that the notebook runs from beginning to end in a fresh environment.
-- [ ] Update this README with verified final results and selected charts.
 
 ## Interpretation and limitations
 
