@@ -34,6 +34,11 @@ Relative lift (%)   = (ad conversion rate / PSA conversion rate − 1) × 100
 
 These are descriptive findings from the existing notebook outputs. Statistical significance and confidence intervals have not yet been evaluated. A rollout or budget recommendation will require assessment of experiment validity, uncertainty, and campaign economics.
 
+### Conversion-rate chart
+
+![Conversion rates for the Ad and PSA groups](conversion_rates.png)
+
+
 ## Dataset
 
 **Source:** [Marketing A/B Testing by Favio Vázquez on Kaggle](https://www.kaggle.com/datasets/faviovaz/marketing-ab-testing)  
