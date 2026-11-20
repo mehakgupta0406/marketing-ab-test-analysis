@@ -12,7 +12,7 @@ Does the advertising group have a higher conversion rate than the PSA comparison
 
 The primary metric is **user conversion rate**: the number of users who converted divided by the total number of users in each group. The dataset records conversion as a Boolean; this project does not assume a specific purchase action or revenue value.
 
-##Results
+## Results
 
 The saved notebook outputs report the following:
 
