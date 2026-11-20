@@ -92,6 +92,17 @@ The source CSV is not included in this repository. Download it from Kaggle to re
 
 The notebook imports `pandas` and `sqlite3`; SQLite support is included with Python. The database exists only in memory. Colab runtime files must be uploaded again when the runtime is reset.
 
+### Dependencies
+
+The library versions used in this analysis are recorded in
+`requirements.txt`.
+
+To install them locally, run:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Next steps
 
 - [ ] Add a written experiment setup, hypotheses, and a predefined significance level.
