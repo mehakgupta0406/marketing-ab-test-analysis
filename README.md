@@ -4,7 +4,10 @@
 
 Analyzing whether users shown a marketing advertisement converted at a higher rate than users shown a public service announcement (PSA), using Python and SQLite.
 
-**Status:** In progress. Data inspection, SQL aggregation, and descriptive lift calculations are implemented. Statistical inference, visualizations, and the final business recommendation are planned.
+**Status:** In progress. Data inspection, SQL aggregation,
+conversion lift, hypothesis testing, confidence intervals,
+and a conversion-rate chart are complete. The final business
+recommendation and reproducibility checks are next.
 
 ## Business question
 
@@ -32,7 +35,15 @@ Absolute difference = ad conversion rate − PSA conversion rate
 Relative lift (%)   = (ad conversion rate / PSA conversion rate − 1) × 100
 ```
 
-These are descriptive findings from the existing notebook outputs. Statistical significance and confidence intervals have not yet been evaluated. A rollout or budget recommendation will require assessment of experiment validity, uncertainty, and campaign economics.
+The ad group had a higher conversion rate than the PSA group.
+A two-sided two-proportion z-test found a statistically significant
+difference (z = 7.370, p < 0.001).
+
+The estimated difference was 0.769 percentage points, with a
+95% confidence interval of 0.587 to 0.936 percentage points.
+
+Causal interpretation depends on valid experiment design.
+Campaign costs and conversion values are needed to assess profitability.
 
 ### Conversion-rate chart
 
