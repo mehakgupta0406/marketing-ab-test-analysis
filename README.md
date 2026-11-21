@@ -114,7 +114,7 @@ pip install -r requirements.txt
 - Campaign costs and conversion values are not analyzed, so conversion lift alone does not establish profitability.
 - Statistical significance, practical value, and generalizability must be considered separately when writing the final recommendation.
   
-  ## Skills demonstrated
+## Skills demonstrated
 
 - Python and pandas for data inspection and validation.
 - SQLite for aggregation and conversion-rate calculations.
