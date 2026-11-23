@@ -18,7 +18,7 @@ class Calculations(unittest.TestCase):
             pd.testing.assert_frame_equal(totals, expected)
         metrics = overall_metrics(data["overall"])
         self.assertAlmostEqual(metrics["additional"], 4342.98214589, places=6)
-        self.assertAlmostEqual(metrics["lift"], 43.0856, places=3)
+        self.assertAlmostEqual(metrics["lift"], 43.0850640222, places=6)
         values = roi_table(metrics["additional"], 400000, 150)["Estimated ROI (%)"]
         np.testing.assert_allclose(values[:3], [-27.61696424, 62.86183047, 334.29821459])
 
