@@ -121,3 +121,36 @@ pip install -r requirements.txt
 - Hypothesis testing and confidence intervals.
 - Matplotlib for visualizing results.
 - Business interpretation and communication of limitations.
+
+
+## Segment analysis
+
+Exploratory analysis compares Ad and PSA conversion rates by `most ads day`, `most ads hour`, and `total ads`. These findings summarize the updated Colab outputs for all 588,101 users.
+
+### Conversion by most ads day
+
+- Monday had the highest observed Ad conversion rate: **3.32%**, compared with **2.26%** for PSA.
+- Tuesday showed the largest observed Ad–PSA difference: **1.60 percentage points**, with **110.69% relative lift**.
+- Thursday showed the smallest difference: **0.14 percentage points**, with **6.95% relative lift**.
+- Ad conversion rates exceeded PSA rates across all seven days.
+
+### Conversion by most ads hour
+
+- **16:00 (4 PM)** had the highest observed Ad conversion rate: **3.09%**, compared with **2.81%** for PSA.
+- **20:00 (8 PM)** had an Ad conversion rate of **3.03%**, compared with **1.76%** for PSA, with a difference of **1.26 percentage points**.
+- The largest defined relative lift occurred at **07:00 (7 AM): 119.02%**.
+- Ad conversion rates exceeded PSA rates at all hours except **03:00**, when rates were **1.04%** and **1.12%**, respectively.
+- Relative lift was undefined (`NaN`) at hours 0, 1, 2, 4, 5, and 6 because the PSA conversion rate was zero.
+
+### Conversion by ad exposure
+
+The median `total ads` value was **13**. The same cutoff was applied to both test groups: **Light exposure = 13 ads or fewer**, and **Heavy exposure = more than 13 ads**. Users tied at the median belong to Light exposure, so segment sizes need not be equal.
+
+| Exposure | Ad conversion rate | PSA conversion rate | Difference (percentage points) | Relative lift |
+| --- | ---: | ---: | ---: | ---: |
+| Light (≤ 13 ads) | 0.38% | 0.40% | −0.03 | −7.07% |
+| Heavy (> 13 ads) | 4.81% | 3.38% | +1.43 | +42.25% |
+
+Relative lift (%) = ((Ad conversion rate − PSA conversion rate) / PSA conversion rate) × 100. Differences and lift were calculated from unrounded rates, so subtracting displayed rates may give slightly different results.
+
+These comparisons are exploratory; statistical significance was not tested within segments. Day and hour describe when users saw the most ads, not when they converted. Exposure is observed activity rather than a randomized treatment, so higher conversion among heavily exposed users does not establish that showing more ads causes more conversions. Check segment user and conversion counts before drawing conclusions, especially for hours with low or zero PSA conversions.
