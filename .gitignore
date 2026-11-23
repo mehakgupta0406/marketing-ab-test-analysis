@@ -1,0 +1,6 @@
+.venv/
+.deps/
+__pycache__/
+.pytest_cache/
+marketing_AB.csv
+.streamlit/secrets.toml
