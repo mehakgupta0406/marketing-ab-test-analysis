@@ -1,5 +1,7 @@
 # Marketing Campaign A/B Test Analysis
 
+**[Open the live Streamlit dashboard](https://marketing-ab-test-analysis-937eynvxkdrxxpxiqmrk7p.streamlit.app/)**
+
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mehakgupta0406/marketing-ab-test-analysis/blob/main/Marketing_ab_testing.ipynb)
 
 Analyzing whether users shown a marketing advertisement converted at a higher rate than users shown a public service announcement (PSA), using Python and SQLite.
@@ -23,7 +25,7 @@ Use Python 3.12 or later. Automated calculation and interface checks run on Pyth
 
 ROI inputs are illustrative INR assumptions, not actual financial records. For filtered cohorts, enter spend matching that cohort and campaign period. Zero spend or a zero PSA rate makes the relevant percentage undefined. Segment comparisons and interactively filtered significance results are exploratory; no adjustment is made for trying multiple cohorts.
 
-To host on Streamlit Community Cloud, connect this repository, select `app.py` as the entrypoint, and choose a supported Python version (3.12 or later). The bundled results work without uploading the source CSV. Uploaded user data is processed in the running app; upload only data you are authorized to process on the hosting service. Hosting is a separate step; this repository does not include a deployed app URL.
+To host on Streamlit Community Cloud, connect this repository, select `app.py` as the entrypoint, and choose a supported Python version (3.12 or later). The bundled results work without uploading the source CSV. Uploaded user data is processed in the running app; upload only data you are authorized to process on the hosting service. The live dashboard is deployed on Streamlit Community Cloud: [open the app](https://marketing-ab-test-analysis-937eynvxkdrxxpxiqmrk7p.streamlit.app/).
 
 Run the calculation and interface checks with `python -m unittest test_dashboard -v`.
 
