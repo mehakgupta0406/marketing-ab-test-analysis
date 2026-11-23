@@ -4,7 +4,28 @@
 
 Analyzing whether users shown a marketing advertisement converted at a higher rate than users shown a public service announcement (PSA), using Python and SQLite.
 
-**Status:** Core analysis complete.
+**Status:** Core analysis, exploratory segmentation, ROI scenarios, and Streamlit dashboard implemented.
+
+## Interactive Streamlit dashboard
+
+The dashboard includes overall conversion rates, lift, the two-sided z-test and 95% confidence interval, day/hour/exposure comparisons, downloadable tables, and an adjustable ROI scenario calculator.
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+Use Python 3.12 or later. Automated calculation and interface checks run on Python 3.12 in GitHub Actions. The dependency versions support the dashboard; earlier notebook outputs record the library versions used for that notebook run.
+
+**Project results** opens immediately using aggregate counts extracted from the saved notebook outputs in `results_snapshot.json`. This is a snapshot of the real analysis, not synthetic user data. Its median exposure cutoff is 13 ads. It does not support combining user-level filters, since joint user records are not included.
+
+**Upload CSV** accepts the original `marketing_AB.csv` and calculates fresh SQLite summaries. Filter users by most ads day, most ads hour, and Light/Heavy exposure; the median cutoff is computed from the full uploaded dataset and held fixed during filtering. Invalid columns, missing values, duplicate user IDs, invalid conversions, and out-of-range hours produce a validation message instead of silently dropping users. Empty cohorts and missing comparison groups are handled explicitly.
+
+ROI inputs are illustrative INR assumptions, not actual financial records. For filtered cohorts, enter spend matching that cohort and campaign period. Zero spend or a zero PSA rate makes the relevant percentage undefined. Segment comparisons and interactively filtered significance results are exploratory; no adjustment is made for trying multiple cohorts.
+
+To host on Streamlit Community Cloud, connect this repository, select `app.py` as the entrypoint, and choose a supported Python version (3.12 or later). The bundled results work without uploading the source CSV. Uploaded user data is processed in the running app; upload only data you are authorized to process on the hosting service. Hosting is a separate step; this repository does not include a deployed app URL.
+
+Run the calculation and interface checks with `python -m unittest test_dashboard -v`.
 
 ## Business question
 
@@ -99,8 +120,8 @@ The notebook imports `pandas` and `sqlite3`; SQLite support is included with Pyt
 
 ### Dependencies
 
-The library versions used in this analysis are recorded in
-`requirements.txt`.
+The current app dependencies are recorded in `requirements.txt`.
+The notebook's saved version-report cell records the versions used for its run.
 
 To install them locally, run:
 

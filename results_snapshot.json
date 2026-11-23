@@ -1,0 +1,419 @@
+{
+  "source": "Saved notebook outputs",
+  "notebook": "Marketing_ab_testing.ipynb",
+  "cutoff": 13,
+  "overall": [
+    {
+      "users": 564577,
+      "conversions": 14423,
+      "test_group": "ad"
+    },
+    {
+      "users": 23524,
+      "conversions": 420,
+      "test_group": "psa"
+    }
+  ],
+  "day": [
+    {
+      "users": 83571,
+      "conversions": 2778,
+      "day": "Monday",
+      "test_group": "ad"
+    },
+    {
+      "users": 3502,
+      "conversions": 79,
+      "day": "Monday",
+      "test_group": "psa"
+    },
+    {
+      "users": 74572,
+      "conversions": 2270,
+      "day": "Tuesday",
+      "test_group": "ad"
+    },
+    {
+      "users": 2907,
+      "conversions": 42,
+      "day": "Tuesday",
+      "test_group": "psa"
+    },
+    {
+      "users": 77418,
+      "conversions": 1963,
+      "day": "Wednesday",
+      "test_group": "ad"
+    },
+    {
+      "users": 3490,
+      "conversions": 55,
+      "day": "Wednesday",
+      "test_group": "psa"
+    },
+    {
+      "users": 79077,
+      "conversions": 1711,
+      "day": "Thursday",
+      "test_group": "ad"
+    },
+    {
+      "users": 3905,
+      "conversions": 79,
+      "day": "Thursday",
+      "test_group": "psa"
+    },
+    {
+      "users": 88805,
+      "conversions": 1995,
+      "day": "Friday",
+      "test_group": "ad"
+    },
+    {
+      "users": 3803,
+      "conversions": 62,
+      "day": "Friday",
+      "test_group": "psa"
+    },
+    {
+      "users": 78802,
+      "conversions": 1679,
+      "day": "Saturday",
+      "test_group": "ad"
+    },
+    {
+      "users": 2858,
+      "conversions": 40,
+      "day": "Saturday",
+      "test_group": "psa"
+    },
+    {
+      "users": 82332,
+      "conversions": 2027,
+      "day": "Sunday",
+      "test_group": "ad"
+    },
+    {
+      "users": 3059,
+      "conversions": 63,
+      "day": "Sunday",
+      "test_group": "psa"
+    }
+  ],
+  "hour": [
+    {
+      "users": 5309,
+      "conversions": 102,
+      "test_group": "ad",
+      "hour": 0
+    },
+    {
+      "users": 227,
+      "conversions": 0,
+      "test_group": "psa",
+      "hour": 0
+    },
+    {
+      "users": 4615,
+      "conversions": 62,
+      "test_group": "ad",
+      "hour": 1
+    },
+    {
+      "users": 187,
+      "conversions": 0,
+      "test_group": "psa",
+      "hour": 1
+    },
+    {
+      "users": 5152,
+      "conversions": 39,
+      "test_group": "ad",
+      "hour": 2
+    },
+    {
+      "users": 181,
+      "conversions": 0,
+      "test_group": "psa",
+      "hour": 2
+    },
+    {
+      "users": 2590,
+      "conversions": 27,
+      "test_group": "ad",
+      "hour": 3
+    },
+    {
+      "users": 89,
+      "conversions": 1,
+      "test_group": "psa",
+      "hour": 3
+    },
+    {
+      "users": 694,
+      "conversions": 11,
+      "test_group": "ad",
+      "hour": 4
+    },
+    {
+      "users": 28,
+      "conversions": 0,
+      "test_group": "psa",
+      "hour": 4
+    },
+    {
+      "users": 742,
+      "conversions": 16,
+      "test_group": "ad",
+      "hour": 5
+    },
+    {
+      "users": 23,
+      "conversions": 0,
+      "test_group": "psa",
+      "hour": 5
+    },
+    {
+      "users": 1985,
+      "conversions": 46,
+      "test_group": "ad",
+      "hour": 6
+    },
+    {
+      "users": 83,
+      "conversions": 0,
+      "test_group": "psa",
+      "hour": 6
+    },
+    {
+      "users": 6168,
+      "conversions": 114,
+      "test_group": "ad",
+      "hour": 7
+    },
+    {
+      "users": 237,
+      "conversions": 2,
+      "test_group": "psa",
+      "hour": 7
+    },
+    {
+      "users": 16968,
+      "conversions": 337,
+      "test_group": "ad",
+      "hour": 8
+    },
+    {
+      "users": 659,
+      "conversions": 7,
+      "test_group": "psa",
+      "hour": 8
+    },
+    {
+      "users": 29802,
+      "conversions": 582,
+      "test_group": "ad",
+      "hour": 9
+    },
+    {
+      "users": 1202,
+      "conversions": 13,
+      "test_group": "psa",
+      "hour": 9
+    },
+    {
+      "users": 37454,
+      "conversions": 818,
+      "test_group": "ad",
+      "hour": 10
+    },
+    {
+      "users": 1485,
+      "conversions": 20,
+      "test_group": "psa",
+      "hour": 10
+    },
+    {
+      "users": 44149,
+      "conversions": 992,
+      "test_group": "ad",
+      "hour": 11
+    },
+    {
+      "users": 2061,
+      "conversions": 30,
+      "test_group": "psa",
+      "hour": 11
+    },
+    {
+      "users": 45238,
+      "conversions": 1092,
+      "test_group": "ad",
+      "hour": 12
+    },
+    {
+      "users": 2060,
+      "conversions": 35,
+      "test_group": "psa",
+      "hour": 12
+    },
+    {
+      "users": 45485,
+      "conversions": 1140,
+      "test_group": "ad",
+      "hour": 13
+    },
+    {
+      "users": 2170,
+      "conversions": 36,
+      "test_group": "psa",
+      "hour": 13
+    },
+    {
+      "users": 43779,
+      "conversions": 1251,
+      "test_group": "ad",
+      "hour": 14
+    },
+    {
+      "users": 1869,
+      "conversions": 30,
+      "test_group": "psa",
+      "hour": 14
+    },
+    {
+      "users": 42855,
+      "conversions": 1279,
+      "test_group": "ad",
+      "hour": 15
+    },
+    {
+      "users": 1828,
+      "conversions": 46,
+      "test_group": "psa",
+      "hour": 15
+    },
+    {
+      "users": 35963,
+      "conversions": 1111,
+      "test_group": "ad",
+      "hour": 16
+    },
+    {
+      "users": 1604,
+      "conversions": 45,
+      "test_group": "psa",
+      "hour": 16
+    },
+    {
+      "users": 33605,
+      "conversions": 959,
+      "test_group": "ad",
+      "hour": 17
+    },
+    {
+      "users": 1383,
+      "conversions": 28,
+      "test_group": "psa",
+      "hour": 17
+    },
+    {
+      "users": 31052,
+      "conversions": 853,
+      "test_group": "ad",
+      "hour": 18
+    },
+    {
+      "users": 1271,
+      "conversions": 32,
+      "test_group": "psa",
+      "hour": 18
+    },
+    {
+      "users": 29169,
+      "conversions": 782,
+      "test_group": "ad",
+      "hour": 19
+    },
+    {
+      "users": 1183,
+      "conversions": 29,
+      "test_group": "psa",
+      "hour": 19
+    },
+    {
+      "users": 27846,
+      "conversions": 843,
+      "test_group": "ad",
+      "hour": 20
+    },
+    {
+      "users": 1077,
+      "conversions": 19,
+      "test_group": "psa",
+      "hour": 20
+    },
+    {
+      "users": 28895,
+      "conversions": 843,
+      "test_group": "ad",
+      "hour": 21
+    },
+    {
+      "users": 1081,
+      "conversions": 24,
+      "test_group": "psa",
+      "hour": 21
+    },
+    {
+      "users": 25515,
+      "conversions": 675,
+      "test_group": "ad",
+      "hour": 22
+    },
+    {
+      "users": 917,
+      "conversions": 15,
+      "test_group": "psa",
+      "hour": 22
+    },
+    {
+      "users": 19547,
+      "conversions": 449,
+      "test_group": "ad",
+      "hour": 23
+    },
+    {
+      "users": 619,
+      "conversions": 8,
+      "test_group": "psa",
+      "hour": 23
+    }
+  ],
+  "exposure": [
+    {
+      "users": 277682,
+      "conversions": 13344,
+      "exposure": "Heavy",
+      "test_group": "ad"
+    },
+    {
+      "users": 10923,
+      "conversions": 369,
+      "exposure": "Heavy",
+      "test_group": "psa"
+    },
+    {
+      "users": 286895,
+      "conversions": 1079,
+      "exposure": "Light",
+      "test_group": "ad"
+    },
+    {
+      "users": 12601,
+      "conversions": 51,
+      "exposure": "Light",
+      "test_group": "psa"
+    }
+  ]
+}
