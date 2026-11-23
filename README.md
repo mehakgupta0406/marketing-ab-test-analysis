@@ -78,6 +78,8 @@ The source CSV is not included in this repository. Download it from Kaggle to re
 10. Documented the business conclusion and analysis limitations.
 11. Verified that the notebook runs from beginning to end.
 12. Recorded library versions in requirements.txt.
+13. Compared conversion rates and lift by day, hour, and Light/Heavy ad exposure.
+14. Modeled ROI and break-even campaign spend under illustrative financial assumptions.
 
 **Tools used:** Python, pandas, SQLite through Python's `sqlite3` module, and Google Colab.
 
@@ -111,7 +113,7 @@ pip install -r requirements.txt
 - The groups have substantially different sample sizes. Unequal allocation alone does not establish a problem; the intended allocation is needed to assess a sample-ratio mismatch.
 - Causal conclusions depend on valid random assignment and independent observations. These assumptions need to be assessed using the available experiment documentation.
 - Ad exposure, day, and hour describe observed activity. Associations with conversion should not be treated as causal targeting recommendations.
-- Campaign costs and conversion values are not analyzed, so conversion lift alone does not establish profitability.
+- Actual campaign costs and conversion values are unavailable. The ROI scenario analysis uses illustrative assumptions and does not establish actual profitability.
 - Statistical significance, practical value, and generalizability must be considered separately when writing the final recommendation.
   
 ## Skills demonstrated
@@ -154,3 +156,36 @@ The median `total ads` value was **13**. The same cutoff was applied to both tes
 Relative lift (%) = ((Ad conversion rate − PSA conversion rate) / PSA conversion rate) × 100. Differences and lift were calculated from unrounded rates, so subtracting displayed rates may give slightly different results.
 
 These comparisons are exploratory; statistical significance was not tested within segments. Day and hour describe when users saw the most ads, not when they converted. Exposure is observed activity rather than a randomized treatment, so higher conversion among heavily exposed users does not establish that showing more ads causes more conversions. Check segment user and conversion counts before drawing conclusions, especially for hours with low or zero PSA conversions.
+
+
+## ROI scenario analysis
+
+The source dataset contains no campaign spend, revenue, or contribution values. All financial inputs below are **illustrative assumptions in INR**, not actual financial results or researched industry benchmarks. They are kept separate from the original user data.
+
+**Contribution per conversion** means revenue minus variable product/service costs, before campaign spend and fixed business expenses.
+
+### Method
+
+Using the unrounded overall conversion rates, the estimated additional conversions among the 564,577 Ad users were **4,342.98**. This compares observed Ad conversions with the conversions expected if the same users converted at the PSA rate. Interpreting this difference as a campaign effect depends on valid random assignment and experiment design.
+
+```text
+Additional conversions = (Ad rate − PSA rate) × Ad users
+Incremental contribution = Additional conversions × Assumed contribution per conversion
+Net contribution = Incremental contribution − Assumed campaign cost
+Estimated ROI (%) = (Net contribution / Assumed campaign cost) × 100
+Break-even campaign spend = Incremental contribution
+```
+
+Rates in the additional-conversions formula are proportions, not percentages. Calculations retain unrounded values; displayed results are rounded.
+
+### Assumptions and results
+
+| Scenario | Assumed campaign cost (INR) | Assumed contribution per conversion (INR) | Estimated net contribution (INR) | Estimated ROI | Break-even campaign spend (INR) |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Conservative | 600,000 | 100 | −165,701.79 | −27.6% | 434,298.21 |
+| Moderate | 400,000 | 150 | 251,447.32 | 62.9% | 651,447.32 |
+| Optimistic | 200,000 | 200 | 668,596.43 | 334.3% | 868,596.43 |
+
+The conservative scenario does not cover assumed campaign spend. The moderate and optimistic scenarios produce positive modeled net contribution after variable costs and campaign spend. Break-even spend is the maximum campaign spend covered by the estimated incremental contribution, before fixed business expenses.
+
+Both spend and contribution per conversion vary across scenarios, so the results reflect their combined influence. These are point-estimate scenarios, not forecasts or confidence bounds; they do not incorporate sampling uncertainty in the conversion-rate difference. Actual ROI requires matching financial data and a valid estimate of incremental campaign impact.
